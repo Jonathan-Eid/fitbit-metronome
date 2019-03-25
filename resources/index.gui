@@ -1,0 +1,63 @@
+<!--> 
+THe navigation consists of just one svg files that switches
+screens by having one section visible at a time and alternates
+by hiding the unused screens
+<-->
+<svg viewport-fill="lightblue">
+
+      <!-->
+      This is the first screen that represents the landing page
+      Each button is a circle with pointer events turned on so 
+      mouse events could get registered when clicking on them 
+
+      Images are located inside
+      <-->
+  <svg id="screen1" >
+    <circle cx="25%" cy="50%" r="60" fill="white" id="beat_btn" pointer-events="all">
+            <image x="7%" y="25%" width="128" height="128" href="waves.png"></image>
+
+      </circle>
+
+      <text x="25%" y="83%"
+            font-family="System-Regular" fill="black"
+            font-size="30" font-weight="bold"
+            text-anchor="middle">Beats</text>
+
+    <circle cx="75%" cy="50%" r="60" fill="white" id="metro_btn" pointer-events="all">
+        <image x="60%" y="30%" width="100" height="100" href="metronome.png"></image>
+    </circle>
+
+    <text x="75%" y="83%"
+          font-family="System-Regular" fill="black"
+          font-size="30" font-weight="bold"
+          text-anchor="middle">Metronome</text>
+
+  </svg>
+<!-->
+      You could see for the second screen that the display is set
+      to none meaning it is invisible
+
+      When making a new screen create a new svg tag and do the same to make it
+      invisible
+      <-->
+  <svg id="screen2" viewport-fill="lightblue"  display="none">
+
+
+      <circle cx="10%" cy="10%" r="35" fill="lightblue" id="metro_back" pointer-events="all">
+            <image x="4%" y="3%" width="40" height="40" href="back.png"></image>
+      </circle>
+
+      <circle cx="35%" cy="50%" r="60" fill="white" id="metro_bpm" pointer-events="all">
+            <text x="25%" y="50%">BPM</text>
+            <text id="bpm_text" x="27%" y="60%">60</text>
+      </circle>
+
+        <line x1="85%" y1="10" x2="85%" y2="100%-10" fill="grey" stroke-width="20"  id="metro_slider" pointer-events="all">
+          <circle id="metro_knob" cx="85%" cy="50%" r="30" fill="black" >
+          </circle>
+        </line>
+
+  </svg>
+
+
+</svg>
