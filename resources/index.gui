@@ -1,4 +1,4 @@
-<!--> 
+<!-->
 THe navigation consists of just one svg files that switches
 screens by having one section visible at a time and alternates
 by hiding the unused screens
@@ -7,8 +7,8 @@ by hiding the unused screens
 
       <!-->
       This is the first screen that represents the landing page
-      Each button is a circle with pointer events turned on so 
-      mouse events could get registered when clicking on them 
+      Each button is a circle with pointer events turned on so
+      mouse events could get registered when clicking on them
 
       Images are located inside
       <-->
@@ -59,5 +59,145 @@ by hiding the unused screens
 
   </svg>
 
+  <svg id="bothBeatsScreen" viewport-fill="lightblue" display="none">
+      <circle cx="10%" cy="10%" r="35" id="bothBeats_back" pointer-events="all">
+            <image x="4%" y="3%" width="40" height="40" href="back.png"></image>
+      </circle>
+      <use id="mixedtext" href="#mixed-text-center-mid" height="30%" fill="black">
+            <set href="#header/text" attributeName="text-buffer" to="Select Beats"/>
+      </use>
+      <use href="#scrollview" height="70%" y="30%">
+        <use href="#scrollview-item" height="40" id="playlist1" pointer-events="all">
+          <rect width="100%" height="40" fill="white"/>
+          <text fill="black">Playlist 1   ></text>
+        </use>
+        <use href="#scrollview-item" height="40" id="playlist2" pointer-events="all">
+          <rect width="100%" height="40" fill="white"/>
+          <text fill="black">Playlist 2   ></text>
+          <line x1="0" y1="0" x2="100%" y2="0"/>
+        </use>
+        <use href="#scrollview-item" height="40" id="playlist3" pointer-events="all">
+          <rect width="100%" height="40" fill="white"/>
+          <text fill="black">Playlist 3   ></text>
+          <line x1="0" y1="0" x2="100%" y2="0" />
+        </use>
+        <use href="#scrollview-item" height="40">
+          <rect width="100%" height="40" fill="white" id="song1" pointer-events="all"/>
+          <text fill="black">Song 1   ></text>
+          <line x1="0" y1="0" x2="100%" y2="0"/>
+        </use>
+        <use href="#scrollview-item" height="40" id="song2" pointer-events="all">
+          <rect width="100%" height="40" fill="white"/>
+          <text fill="black">Song 2   ></text>
+          <line x1="0" y1="0" x2="100%" y2="0"/>
+        </use>
+        <use href="#scrollview-item" height="40" id="song3" pointer-events="all">
+          <rect width="100%" height="40" fill="white"/>
+          <text fill="black">Song 3   ></text>
+          <line x1="0" y1="0" x2="100%" y2="0" />
+        </use>
+      </use>
+  </svg>
+
+  <svg id="playlistBeatsScreen" viewport-fill="lightblue" display="none">
+      <circle cx="10%" cy="10%" r="35" id="playlistBeats_back" pointer-events="all">
+            <image x="4%" y="3%" width="40" height="40" href="back.png"></image>
+      </circle>
+      <use id="mixedtext" href="#mixed-text-center-mid" height="30%" fill="black">
+            <set href="#header/text" attributeName="text-buffer" to="Playlist"/>
+      </use>
+      <use href="#scrollview" height="70%" y="30%">
+        <use href="#scrollview-item" height="40">
+          <rect width="100%" height="40" fill="white" id="playlistSong1" pointer-events="all"/>
+          <text fill="black">Song 1   ></text>
+          <line x1="0" y1="0" x2="100%" y2="0"/>
+        </use>
+        <use href="#scrollview-item" height="40" id="playlistSong2" pointer-events="all">
+          <rect width="100%" height="40" fill="white"/>
+          <text fill="black">Song 2   ></text>
+          <line x1="0" y1="0" x2="100%" y2="0"/>
+        </use>
+        <use href="#scrollview-item" height="40" id="playlistSong3" pointer-events="all">
+          <rect width="100%" height="40" fill="white"/>
+          <text fill="black">Song 3   ></text>
+          <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
+        </use>
+        <use href="#scrollview-item" height="40" id="playlistSong4" pointer-events="all">
+          <rect width="100%" height="40" fill="white"/>
+          <text fill="black">Song 4   ></text>
+          <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
+        </use>
+        <use href="#scrollview-item" height="40" id="playlistSong5" pointer-events="all">
+          <rect width="100%" height="40" fill="white"/>
+          <text fill="black">Song 5   ></text>
+          <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
+        </use>
+        <use href="#scrollview-item" height="40" id="playlistSong6" pointer-events="all">
+          <rect width="100%" height="40" fill="white"/>
+          <text fill="black">Song 6   ></text>
+          <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
+        </use>
+      </use>
+  </svg>
+
+  <svg id="programmedBeatPausedScreen"  viewport-fill="lightblue" display="none">
+      <circle cx="10%" cy="10%" r="35" id="programmedBeatPaused_back" pointer-events="all">
+            <image x="4%" y="3%" width="40" height="40" href="back.png"></image>
+      </circle>
+      <use href="#mixed-text-center-mid" height="30%" fill="black">
+            <set href="#header/text" attributeName="text-buffer" to="Now Playing: Song"/>
+      </use>
+
+
+    <circle cx="25%" cy="50%" r="60" fill="white" id="restartPaused" pointer-events="all">
+            <image x="7%" y="25%" width="128" height="128" href="waves.png"></image>
+
+      </circle>
+
+      <text x="25%" y="83%"
+            font-family="System-Regular" fill="black"
+            font-size="30" font-weight="bold"
+            text-anchor="middle">Restart</text>
+
+    <circle cx="75%" cy="50%" r="60" fill="white" id="play" pointer-events="all">
+        <image x="60%" y="30%" width="100" height="100" href="metronome.png"></image>
+    </circle>
+
+    <text x="75%" y="83%"
+          font-family="System-Regular" fill="black"
+          font-size="30" font-weight="bold"
+          text-anchor="middle">Play</text>
+
+  </svg>
+
+  <svg id="programmedBeatPlayScreen" viewport-fill="lightblue" display="none">
+      <circle cx="10%" cy="10%" r="35" id="programmedBeatPlay_back" pointer-events="all">
+            <image x="4%" y="3%" width="40" height="40" href="back.png"></image>
+      </circle>
+      <use href="#mixed-text-center-mid" height="30%" fill="black">
+            <set href="#header/text" attributeName="text-buffer" to="Now Playing: Song"/>
+      </use>
+
+
+    <circle cx="25%" cy="50%" r="60" fill="white" id="restartPlay" pointer-events="all">
+            <image x="7%" y="25%" width="128" height="128" href="waves.png"></image>
+
+      </circle>
+
+      <text x="25%" y="83%"
+            font-family="System-Regular" fill="black"
+            font-size="30" font-weight="bold"
+            text-anchor="middle">Restart</text>
+
+    <circle cx="75%" cy="50%" r="60" fill="white" id="pause" pointer-events="all">
+        <image x="60%" y="30%" width="100" height="100" href="metronome.png"></image>
+    </circle>
+
+    <text x="75%" y="83%"
+          font-family="System-Regular" fill="black"
+          font-size="30" font-weight="bold"
+          text-anchor="middle">Pause</text>
+
+  </svg>
 
 </svg>
