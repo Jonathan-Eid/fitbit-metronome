@@ -150,7 +150,7 @@ by hiding the unused screens
 
 
     <circle cx="25%" cy="50%" r="60" fill="white" id="restartPaused" pointer-events="all">
-            <image x="7%" y="25%" width="128" height="128" href="waves.png"></image>
+            <image x="7%" y="25%" width="128" height="128" href="restart.png"></image>
 
       </circle>
 
@@ -160,7 +160,7 @@ by hiding the unused screens
             text-anchor="middle">Restart</text>
 
     <circle cx="75%" cy="50%" r="60" fill="white" id="play" pointer-events="all">
-        <image x="60%" y="30%" width="100" height="100" href="metronome.png"></image>
+        <image x="60%" y="30%" width="100" height="100" href="play.png"></image>
     </circle>
 
     <text x="75%" y="83%"
@@ -180,7 +180,7 @@ by hiding the unused screens
 
 
     <circle cx="25%" cy="50%" r="60" fill="white" id="restartPlay" pointer-events="all">
-            <image x="7%" y="25%" width="128" height="128" href="waves.png"></image>
+            <image x="7%" y="25%" width="128" height="128" href="restart.png"></image>
 
       </circle>
 
@@ -190,7 +190,7 @@ by hiding the unused screens
             text-anchor="middle">Restart</text>
 
     <circle cx="75%" cy="50%" r="60" fill="white" id="pause" pointer-events="all">
-        <image x="60%" y="30%" width="100" height="100" href="metronome.png"></image>
+        <image x="60%" y="30%" width="100" height="100" href="pause.png"></image>
     </circle>
 
     <text x="75%" y="83%"
