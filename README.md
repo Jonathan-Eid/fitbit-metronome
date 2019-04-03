@@ -1,4 +1,4 @@
-# Fitbit Metronome
+# Fitbit Metronome for the Fitbit Ionic
 
 ## Programmable Metronome
 
