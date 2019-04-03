@@ -60,7 +60,8 @@ by hiding the unused screens
   </svg>
 
   <svg id="bothBeatsScreen" viewport-fill="lightblue" display="none">
-      <circle cx="10%" cy="10%" r="35" id="bothBeats_back" pointer-events="all">
+
+      <circle cx="10%" cy="10%" r="35" fill="lightblue" id="bothBeats_back" pointer-events="all">
             <image x="4%" y="3%" width="40" height="40" href="back.png"></image>
       </circle>
       <use id="mixedtext" href="#mixed-text-center-mid" height="30%" fill="black">
@@ -100,9 +101,11 @@ by hiding the unused screens
   </svg>
 
   <svg id="playlistBeatsScreen" viewport-fill="lightblue" display="none">
-      <circle cx="10%" cy="10%" r="35" id="playlistBeats_back" pointer-events="all">
+
+      <circle cx="10%" cy="10%" r="35" fill="lightblue" id="playlistBeats_back" pointer-events="all">
             <image x="4%" y="3%" width="40" height="40" href="back.png"></image>
       </circle>
+
       <use id="mixedtext" href="#mixed-text-center-mid" height="30%" fill="black">
             <set href="#header/text" attributeName="text-buffer" to="Playlist"/>
       </use>
@@ -141,7 +144,8 @@ by hiding the unused screens
   </svg>
 
   <svg id="programmedBeatPausedScreen"  viewport-fill="lightblue" display="none">
-      <circle cx="10%" cy="10%" r="35" id="programmedBeatPaused_back" pointer-events="all">
+
+      <circle cx="10%" cy="10%" r="35" fill="lightblue" id="programmedBeatPaused_back" pointer-events="all">
             <image x="4%" y="3%" width="40" height="40" href="back.png"></image>
       </circle>
       <use href="#mixed-text-center-mid" height="30%" fill="black">
@@ -150,7 +154,7 @@ by hiding the unused screens
 
 
     <circle cx="25%" cy="50%" r="60" fill="white" id="restartPaused" pointer-events="all">
-            <image x="7%" y="25%" width="128" height="128" href="restart.png"></image>
+            <image x="12%" y="33%" width="85" height="85" href="restart.png"></image>
 
       </circle>
 
@@ -171,7 +175,8 @@ by hiding the unused screens
   </svg>
 
   <svg id="programmedBeatPlayScreen" viewport-fill="lightblue" display="none">
-      <circle cx="10%" cy="10%" r="35" id="programmedBeatPlay_back" pointer-events="all">
+
+      <circle cx="10%" cy="10%" r="35" fill="lightblue" id="programmedBeatPlay_back" pointer-events="all">
             <image x="4%" y="3%" width="40" height="40" href="back.png"></image>
       </circle>
       <use href="#mixed-text-center-mid" height="30%" fill="black">
@@ -180,7 +185,7 @@ by hiding the unused screens
 
 
     <circle cx="25%" cy="50%" r="60" fill="white" id="restartPlay" pointer-events="all">
-            <image x="7%" y="25%" width="128" height="128" href="restart.png"></image>
+            <image x="12%" y="33%" width="85" height="85" href="restart.png"></image>
 
       </circle>
 

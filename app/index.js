@@ -1,5 +1,27 @@
 import document from "document";
 import { vibration } from "haptics";
+import asap from "fitbit-asap/app"
+
+
+asap.onmessage = message => {
+
+  if (message["metronome"]){
+    clearInterval(bpm_timer)
+    showScreen2()
+    bpm = message["metronome"]
+    startBpm()
+    metro_bpm.style.fill = "green"
+  }
+  if(message=="play"){
+    console.log("song test");
+    showPausedBeatScreen();
+    programmedBeatInterval();
+  }
+  if(message=="pause"){
+    
+  }
+
+}
 
 //Get all changeable elements by their id
 
@@ -174,13 +196,13 @@ function programmedBeatInterval() {
     if (!paused) {
       bar_count % 4 == 0 ? vibration.start("confirmation-max") : vibration.start("confirmation");
       bar_count = bar_count + 1;
-      if (bar_count == 40) {
+      if (bar_count == 12) {
         clearInterval(bpm_timer);
         bpm_timer = setInterval(() => {
           if (!paused) {
             bar_count % 4 == 0 ? vibration.start("confirmation-max") : vibration.start("confirmation");
             bar_count = bar_count + 1;
-            if (bar_count == 80) {
+            if (bar_count == 50) {
               clearInterval(bpm_timer);
             }
           }
@@ -199,10 +221,14 @@ playlistBeats_back.onclick = function () {
 }
 
 programmedBeatPlay_back.onclick = function () {
+  clearInterval(bpm_timer)
+  bpm_timer = null
   showBothBeatsScreen();
 }
 
 programmedBeatPaused_back.onclick = function () {
+  clearInterval(bpm_timer)
+  bpm_timer = null
   showBothBeatsScreen();
 }
 
@@ -223,6 +249,7 @@ playlistSong6.onclick = startProgrammedBeat;
 
 let restart = function () {
   clearInterval(bpm_timer);
+  bar_count = 0
   programmedBeatInterval();
 }
 
