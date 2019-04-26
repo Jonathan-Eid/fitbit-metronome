@@ -68,32 +68,32 @@ by hiding the unused screens
             <set href="#header/text" attributeName="text-buffer" to="Select Beats"/>
       </use>
       <use href="#scrollview" height="70%" y="30%">
-        <use href="#scrollview-item" height="40" id="playlist1" pointer-events="all">
-          <rect width="100%" height="40" fill="white"/>
+        <use href="#scrollview-item" height="50" id="playlist1" pointer-events="all">
+          <rect width="100%" height="50" fill="white"/>
           <text fill="black">Playlist 1   ></text>
         </use>
-        <use href="#scrollview-item" height="40" id="playlist2" pointer-events="all">
-          <rect width="100%" height="40" fill="white"/>
+        <use href="#scrollview-item" height="50" id="playlist2" pointer-events="all">
+          <rect width="100%" height="50" fill="white"/>
           <text fill="black">Playlist 2   ></text>
           <line x1="0" y1="0" x2="100%" y2="0"/>
         </use>
-        <use href="#scrollview-item" height="40" id="playlist3" pointer-events="all">
-          <rect width="100%" height="40" fill="white"/>
+        <use href="#scrollview-item" height="50" id="playlist3" pointer-events="all">
+          <rect width="100%" height="50" fill="white"/>
           <text fill="black">Playlist 3   ></text>
           <line x1="0" y1="0" x2="100%" y2="0" />
         </use>
-        <use href="#scrollview-item" height="40">
-          <rect width="100%" height="40" fill="white" id="song1" pointer-events="all"/>
+        <use href="#scrollview-item" height="50">
+          <rect width="100%" height="50" fill="white" id="song1" pointer-events="all"/>
           <text fill="black">Song 1   ></text>
           <line x1="0" y1="0" x2="100%" y2="0"/>
         </use>
-        <use href="#scrollview-item" height="40" id="song2" pointer-events="all">
-          <rect width="100%" height="40" fill="white"/>
+        <use href="#scrollview-item" height="50" id="song2" pointer-events="all">
+          <rect width="100%" height="50" fill="white"/>
           <text fill="black">Song 2   ></text>
           <line x1="0" y1="0" x2="100%" y2="0"/>
         </use>
-        <use href="#scrollview-item" height="40" id="song3" pointer-events="all">
-          <rect width="100%" height="40" fill="white"/>
+        <use href="#scrollview-item" height="50" id="song3" pointer-events="all">
+          <rect width="100%" height="50" fill="white"/>
           <text fill="black">Song 3   ></text>
           <line x1="0" y1="0" x2="100%" y2="0" />
         </use>
@@ -110,33 +110,33 @@ by hiding the unused screens
             <set href="#header/text" attributeName="text-buffer" to="Playlist"/>
       </use>
       <use href="#scrollview" height="70%" y="30%">
-        <use href="#scrollview-item" height="40">
-          <rect width="100%" height="40" fill="white" id="playlistSong1" pointer-events="all"/>
+        <use href="#scrollview-item" height="50">
+          <rect width="100%" height="50" fill="white" id="playlistSong1" pointer-events="all"/>
           <text fill="black">Song 1   ></text>
           <line x1="0" y1="0" x2="100%" y2="0"/>
         </use>
-        <use href="#scrollview-item" height="40" id="playlistSong2" pointer-events="all">
-          <rect width="100%" height="40" fill="white"/>
+        <use href="#scrollview-item" height="50" id="playlistSong2" pointer-events="all">
+          <rect width="100%" height="50" fill="white"/>
           <text fill="black">Song 2   ></text>
           <line x1="0" y1="0" x2="100%" y2="0"/>
         </use>
-        <use href="#scrollview-item" height="40" id="playlistSong3" pointer-events="all">
-          <rect width="100%" height="40" fill="white"/>
+        <use href="#scrollview-item" height="50" id="playlistSong3" pointer-events="all">
+          <rect width="100%" height="50" fill="white"/>
           <text fill="black">Song 3   ></text>
           <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
         </use>
-        <use href="#scrollview-item" height="40" id="playlistSong4" pointer-events="all">
-          <rect width="100%" height="40" fill="white"/>
+        <use href="#scrollview-item" height="50" id="playlistSong4" pointer-events="all">
+          <rect width="100%" height="50" fill="white"/>
           <text fill="black">Song 4   ></text>
           <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
         </use>
-        <use href="#scrollview-item" height="40" id="playlistSong5" pointer-events="all">
-          <rect width="100%" height="40" fill="white"/>
+        <use href="#scrollview-item" height="50" id="playlistSong5" pointer-events="all">
+          <rect width="100%" height="50" fill="white"/>
           <text fill="black">Song 5   ></text>
           <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
         </use>
-        <use href="#scrollview-item" height="40" id="playlistSong6" pointer-events="all">
-          <rect width="100%" height="40" fill="white"/>
+        <use href="#scrollview-item" height="50" id="playlistSong6" pointer-events="all">
+          <rect width="100%" height="50" fill="white"/>
           <text fill="black">Song 6   ></text>
           <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
         </use>
